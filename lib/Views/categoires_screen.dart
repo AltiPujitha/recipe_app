@@ -47,8 +47,8 @@ class CategoryItem extends StatelessWidget {
 
   void selectCategory(BuildContext context) {
     Navigator.of(context).push(MaterialPageRoute(
-      builder: (ctx) =>
-          MealDetailScreen(category.id), // Update to navigate to meal details
+      builder: (ctx) => MealDetailScreen(
+          category.id, category.name), // Update to navigate to meal details
     ));
   }
 

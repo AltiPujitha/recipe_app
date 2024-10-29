@@ -9,8 +9,9 @@ import 'package:recipe_app/Views/meals_info.dart';
 
 class MealDetailScreen extends StatelessWidget {
   final String categoryId;
+  final String namee;
 
-  MealDetailScreen(this.categoryId);
+  MealDetailScreen(this.categoryId, this.namee);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class MealDetailScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-          title: Text('Meals',
+          title: Text(namee,
               style:
                   TextStyle(color: Colors.black, fontWeight: FontWeight.bold))),
       body: ListView.builder(
